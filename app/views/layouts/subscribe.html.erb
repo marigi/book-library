@@ -28,18 +28,15 @@
 
      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <h1 class="title is-5 has-text-white"><%= Rails.configuration.application_name %></h1>
+        <div class="navbar-item">
+          <h1 class="title is-5 has-text-white"><%= Rails.configuration.application_name %></h1>
+        </div>
       </div>
+    </nav>
 
-      
-    </div>
-  </nav>
-
- 
     <div class="container">
       <%= yield %>
     </div>
 
-
-</body>
+  </body>
 </html>

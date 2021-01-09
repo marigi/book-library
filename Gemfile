@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.10', '>= 2.10.1'
 gem 'mini_magick', '~> 4.11'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+gem 'simple_form', '~> 5.0', '>= 5.0.3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.5.1', require: false
