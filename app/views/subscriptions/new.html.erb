@@ -5,7 +5,7 @@
 <hr />
 <p>Chosen plan: <strong><%= params[:plan] %></p>
 <hr />
-<%= form_tag subscription_path, id: "payment-form" do |form| %>
+<%= form_tag subscriptions_path, id: "payment-form" do |form| %>
 <div class="field">
 <label for="class-element" class="label">Enter credit or debit card</label>
 <div id="card-element">
@@ -15,6 +15,7 @@
 <%= hidden_field_tag :plan_id, params[:plan_id] %>
 <button class="button is-fullwidth is-link mt4">Submit</button>
 </div>
+<% end %>
 </div>
 </div>
 </div>
