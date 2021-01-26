@@ -15,13 +15,13 @@
   </head>
 
   <body class="<%= yield (:body_class) %>">
-    <% if flash[:notice] %>
+    <% if flash.now[:notice] %>
       <div class="notification is-success global-notification">
         <p class="notice"><%= notice %></p>
       </div>
     <% end %>
 
-    <% if flash[:alert] %>
+    <% if flash.now[:alert] %>
     <div class="notification is-danger global-notification">
       <p class="alert"><%= alert %></p>
     </div>

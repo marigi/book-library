@@ -9,6 +9,7 @@ class SubscriptionsController < ApplicationController
   end
 
   def create
+    require "stripe"
     Stripe.api_key = Rails.application.credentials.stripe_api_key
 
     plan_id = params[:plan_id]
